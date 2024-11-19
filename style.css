@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.main-container {
+    width: 48vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 1px 1px 20px 1px #bab2b2;
+}
+
+img {
+    height: 120px;
+    width: 170px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.btns div {
+    font-size: 27px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #cbc6c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btns div:hover {
+    opacity: 0.9;
+}
+
+.name {
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.job {
+    font-size: 20px;
+        font-size: 17px;
+        color: rgb(0, 149, 255);
+        font-weight: 600;
+        font-family: sans-serif;
+}
+
+.description {
+    width: 70%;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 700px) and (min-width: 300px) {
+    .main-container {
+        width: 80vw;
+    }
+}
